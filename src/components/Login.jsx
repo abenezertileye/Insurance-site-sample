@@ -9,8 +9,11 @@ import {
   Avatar,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -83,8 +86,8 @@ const Login = () => {
         <Typography variant="body2" sx={{ mt: 3 }}>
           Don't have an account?{" "}
           <Button
-            href="/join-us"
             sx={{ textTransform: "none", fontWeight: 600, color: "#305CDE" }}
+            onClick={() => navigate("/signup")}
           >
             Sign Up
           </Button>
