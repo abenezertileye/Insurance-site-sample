@@ -7,6 +7,7 @@ import Testimonal from "./components/Testimonials.jsx";
 import JoinUs from "./components/JoinUs.jsx";
 import Footer from "./components/Footer.jsx";
 import Login from "./components/Login.jsx"; // create this page
+import Signup from "./components/Signup.jsx"; // create this page
 
 function App() {
   const joinUsRef = useRef(null);
@@ -32,6 +33,7 @@ function App() {
         }
       />
       <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 }
